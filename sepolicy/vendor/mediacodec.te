@@ -2,4 +2,4 @@
 set_prop(mediacodec, dalvik_vm_config_prop)
 
 allow mediacodec sysfs_bus:dir search;
-allow mediacodec sysfs_emi_ctrl:dir search;
+allow mediacodec sysfs_emi_ctrl_concurrency_scenario:dir search;

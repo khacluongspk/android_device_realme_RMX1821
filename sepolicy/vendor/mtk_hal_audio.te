@@ -1,10 +1,10 @@
-# Allow mtk_hal_audio to read props
-get_prop(mtk_hal_audio, service_nvram_init_prop)
-get_prop(mtk_hal_audio, tel_switch_prop)
+# Allow hal_audio_default to read props
+get_prop(hal_audio_default, vendor_mtk_service_nvram_init_prop)
+get_prop(hal_audio_default, vendor_mtk_tel_switch_prop)
 
-# Allow mtk_hal_audio to read /proc/oppoVersion
-allow mtk_hal_audio proc_oppoversion:file r_file_perms;
-allow mtk_hal_audio proc_oppoversion:dir search;
+# Allow hal_audio_default to read /proc/oppoVersion
+allow hal_audio_default proc_oppoversion:file r_file_perms;
+allow hal_audio_default proc_oppoversion:dir search;
 
-# Allow mtk_hal_audio to set vendor_audio_trnning_prop
-set_prop(mtk_hal_audio, vendor_audio_tunning_prop)
+# Allow hal_audio_default to set vendor_audio_trnning_prop
+set_prop(hal_audio_default, vendor_audio_tunning_prop)

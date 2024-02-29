@@ -9,3 +9,7 @@ type proc_oppoversion, fs_type, proc_type;
 
 # OppoCustom Sensor
 type proc_oppocustom_sensor, fs_type, proc_type;
+
+
+type sysfs_bus, fs_type, sysfs_type;
+
